@@ -6,21 +6,21 @@ import { ThemeContext } from "../Context/ThemeContext";
 
 function App() {
   const { isLoggedIn, toggleAuth } = useContext(AuthContext);
-  const { theme: currentTheme, toggleTheme } = useContext(ThemeContext);
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
     <ChakraProvider>
       <Flex
         as="nav"
         p="4"
-        bg={currentTheme === "light" ? "gray.100" : "gray.700"}
+        bg={theme === "light" ? "gray.100" : "gray.700"}
         justifyContent="space-between"
       >
         <Button onClick={toggleAuth}>
           {isLoggedIn ? "Log Out" : "Log In"}
         </Button>
         <Button onClick={toggleTheme}>
-          Toggle to {currentTheme === "light" ? "Dark" : "Light"} Theme
+          Toggle to {theme === "light" ? "Dark" : "Light"} Theme
         </Button>
       </Flex>
       <Grid templateColumns="repeat(3, 1fr)" gap="4" p="4">
