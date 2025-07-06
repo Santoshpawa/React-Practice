@@ -66,7 +66,7 @@ export default function App() {
   };
 
   return (
-    <div style={{ padding: "1rem" }}>
+    <div style={{ padding: "1rem", textAlign: "center" }}>
       <h2>Add College</h2>
       {state.error && <p style={{ color: "red" }}>{state.error}</p>}
       <form onSubmit={handleSubmit}>
@@ -75,6 +75,7 @@ export default function App() {
           value={state.college_name}
           onChange={handleChange}
           placeholder="College Name"
+          style={{ margin: "10px" }}
         />
         <br />
         <input
@@ -82,6 +83,7 @@ export default function App() {
           value={state.establishment_year}
           onChange={handleChange}
           placeholder="Establishment Year"
+          style={{ margin: "10px" }}
         />
         <br />
         <input
@@ -89,6 +91,7 @@ export default function App() {
           value={state.address.building}
           onChange={handleChange}
           placeholder="Building"
+          style={{ margin: "10px" }}
         />
         <br />
         <input
@@ -96,6 +99,7 @@ export default function App() {
           value={state.address.street}
           onChange={handleChange}
           placeholder="Street"
+          style={{ margin: "10px" }}
         />
         <br />
         <input
@@ -103,6 +107,7 @@ export default function App() {
           value={state.address.city}
           onChange={handleChange}
           placeholder="City"
+          style={{ margin: "10px" }}
         />
         <br />
         <input
@@ -110,6 +115,7 @@ export default function App() {
           value={state.address.state}
           onChange={handleChange}
           placeholder="State"
+          style={{ margin: "10px" }}
         />
         <br />
         <input
@@ -117,6 +123,7 @@ export default function App() {
           value={state.address.pincode}
           onChange={handleChange}
           placeholder="Pincode"
+          style={{ margin: "10px" }}
         />
         <br />
         <input
@@ -124,12 +131,14 @@ export default function App() {
           value={state.address.landmark}
           onChange={handleChange}
           placeholder="Landmark"
+          style={{ margin: "10px" }}
         />
         <br />
         <input
           name="courses"
           onChange={handleCoursesChange}
           placeholder="Courses (comma separated)"
+          style={{ margin: "10px" }}
         />
         <br />
         <br />
