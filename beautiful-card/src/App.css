@@ -1,0 +1,87 @@
+/* App.css */
+body {
+  background: #f2f4f7;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.card {
+  max-width: 320px;
+  margin: 60px auto;
+  padding: 24px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #6c63ff;
+}
+
+h2 {
+  margin: 10px 0 5px;
+}
+
+.username {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.bio {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tag {
+  background-color: #eee;
+  border-radius: 12px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.message {
+  background-color: white;
+  border: 1px solid #6c63ff;
+  color: #6c63ff;
+}
+
+.follow {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.follow.unfollow {
+  background-color: #ff5e5e;
+}
