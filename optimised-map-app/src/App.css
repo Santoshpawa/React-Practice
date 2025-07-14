@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.map {
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
